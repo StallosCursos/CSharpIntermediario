@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeituraDisco", "LeituraEscritaDisco\LeituraDisco.csproj", "{090C3B89-8F10-41E8-96AC-4A25F6A0F7EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscritaDisco", "EscritaDisco\EscritaDisco.csproj", "{A68648E8-7FAA-4DC3-8F91-3EB53A602112}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{090C3B89-8F10-41E8-96AC-4A25F6A0F7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090C3B89-8F10-41E8-96AC-4A25F6A0F7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090C3B89-8F10-41E8-96AC-4A25F6A0F7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090C3B89-8F10-41E8-96AC-4A25F6A0F7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68648E8-7FAA-4DC3-8F91-3EB53A602112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68648E8-7FAA-4DC3-8F91-3EB53A602112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68648E8-7FAA-4DC3-8F91-3EB53A602112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68648E8-7FAA-4DC3-8F91-3EB53A602112}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7B70AB9-C3DF-4034-92E5-8FA7C954DA73}
+	EndGlobalSection
+EndGlobal
