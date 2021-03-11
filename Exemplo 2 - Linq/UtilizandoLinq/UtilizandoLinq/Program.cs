@@ -14,8 +14,6 @@ namespace UtilizandoLinq
 
             List<Character> chars = CarregarLista(Arquivo);
 
-            Console.Clear();
-
             UtilizandoFiltros(chars);
 
             Console.Clear();
@@ -28,10 +26,10 @@ namespace UtilizandoLinq
 
             Console.Clear();
 
-            UtilizandoJunções(chars);
+            UtilizandoJuncoes(chars);
         }
 
-        private static void UtilizandoJunções(List<Character> chars)
+        private static void UtilizandoJuncoes(List<Character> chars)
         {
             var resultado = (
                                from consulta in chars
