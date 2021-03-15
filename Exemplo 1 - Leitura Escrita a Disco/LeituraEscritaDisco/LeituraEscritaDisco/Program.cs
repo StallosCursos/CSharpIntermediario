@@ -24,8 +24,13 @@ namespace LeituraEscritaDisco
             if (fileInfo.Exists)
             {
                 LeituraCarregandoArquivoInteiro();
+                Console.Clear();
+
                 LeituraSemCarregarArquivoInteiro();
+                Console.Clear();
+
                 LeituraComStreamReader();
+                Console.Clear();
             }
         }
 
@@ -60,9 +65,10 @@ namespace LeituraEscritaDisco
 
                 indexLine++;
             }
-            consoleTable.Write();
 
             _stopwatch.Stop();
+
+            consoleTable.Write();
             Console.WriteLine($"Tempo de execução carregando arquivo parcialmente {_stopwatch.ElapsedMilliseconds}");
         }
 
@@ -81,9 +87,9 @@ namespace LeituraEscritaDisco
                 consoleTable.AddRow(colunas);
             }
 
-            consoleTable.Write();
+             _stopwatch.Stop();
 
-            _stopwatch.Stop();
+            consoleTable.Write();
             Console.WriteLine($"Tempo de execução carregando arquivo inteiro {_stopwatch.ElapsedMilliseconds}");
         }
     }
