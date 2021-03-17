@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenciaSimples", "PersistenciaSimples\PersistenciaSimples.csproj", "{F8793EF0-3D27-4884-8A50-81F81E10AA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8793EF0-3D27-4884-8A50-81F81E10AA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8793EF0-3D27-4884-8A50-81F81E10AA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8793EF0-3D27-4884-8A50-81F81E10AA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8793EF0-3D27-4884-8A50-81F81E10AA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA1919C6-A4FC-4581-8E9C-76A44CB3E51B}
+	EndGlobalSection
+EndGlobal
