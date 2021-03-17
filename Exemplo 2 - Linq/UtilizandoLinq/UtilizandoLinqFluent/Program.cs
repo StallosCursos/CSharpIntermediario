@@ -56,9 +56,9 @@ namespace UtilizandoLinqFluent
         private static void UtilizandoAgrupamento(IEnumerable<Character> characters)
         {
             var dicionarioGrupos = characters.GroupBy(t => t.Alignment)
-                                                         .OrderBy(t => t.Key)
-                                                         .Select(t => new { Aligment = t.Key, Chars = t.ToList() })
-                                                         .ToDictionary(k => k.Aligment, v => v.Chars);
+                                             .OrderBy(t => t.Key)
+                                             .Select(t => new { Aligment = t.Key, Chars = t.ToList() })
+                                             .ToDictionary(k => k.Aligment, v => v.Chars);
 
             ImprimirTabela("Apenas Chars bons", dicionarioGrupos["good"]);
             ImprimirTabela("Apenas Chars ruins", dicionarioGrupos["bad"]);
@@ -67,16 +67,16 @@ namespace UtilizandoLinqFluent
         private static void SomandoValores(IEnumerable<Character> characters)
         {
             var resultado = characters.Where(t => t.Intelligence >= 50)
-                                                  .GroupBy(t => t.Alignment)
-                                                  .Select(t => new
-                                                  {
-                                                      Chave = t.Key,
-                                                      Quantidade = t.Count(),
-                                                      Chars = t.ToList(),
-                                                      SomaInteligencia = t.Sum(s => s.Intelligence),
-                                                      MinimoInteligencia = t.Min(s => s.Intelligence),
-                                                      MaximoInteligencia = t.Max(s => s.Intelligence)
-                                                  });
+                                      .GroupBy(t => t.Alignment)
+                                      .Select(t => new
+                                      {
+                                          Chave = t.Key,
+                                          Quantidade = t.Count(),
+                                          Chars = t.ToList(),
+                                          SomaInteligencia = t.Sum(s => s.Intelligence),
+                                          MinimoInteligencia = t.Min(s => s.Intelligence),
+                                          MaximoInteligencia = t.Max(s => s.Intelligence)
+                                      });
 
             resultado.ToList().ForEach(t =>
             {

@@ -74,7 +74,7 @@ namespace UtilizandoLinq
                              };
 
             resultado.ToList().ForEach( t => {
-
+ 
                 ConsoleTable consoleTable = new ConsoleTable();
                 consoleTable.AddColumn(new[] { "Chave", "Quantidade", "Soma", "Minimo", "Maximo" });
                 consoleTable.AddRow(t.Chave, t.Quantidade, t.SomaInteligencia, t.MinimoInteligencia, t.MaximoInteligencia);
