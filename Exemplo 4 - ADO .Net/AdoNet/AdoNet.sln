@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersistenciaSimples", "PersistenciaSimples\PersistenciaSimples.csproj", "{F8793EF0-3D27-4884-8A50-81F81E10AA7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LendoDados", "LendoDados\LendoDados.csproj", "{418AD42A-AC95-465D-A68B-84307AAA6DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LendoDados", "LendoDados\LendoDados.csproj", "{418AD42A-AC95-465D-A68B-84307AAA6DA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenciaCompleta", "PersistenciaCompleta\PersistenciaCompleta.csproj", "{2DA59E2D-A0E5-4B0F-948A-E7CD1798DF45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{418AD42A-AC95-465D-A68B-84307AAA6DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{418AD42A-AC95-465D-A68B-84307AAA6DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{418AD42A-AC95-465D-A68B-84307AAA6DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA59E2D-A0E5-4B0F-948A-E7CD1798DF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA59E2D-A0E5-4B0F-948A-E7CD1798DF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA59E2D-A0E5-4B0F-948A-E7CD1798DF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA59E2D-A0E5-4B0F-948A-E7CD1798DF45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
