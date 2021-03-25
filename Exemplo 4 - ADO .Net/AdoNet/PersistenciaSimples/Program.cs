@@ -17,13 +17,15 @@ namespace PersistenciaSimples
             SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Clientes;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             connection.Open();
 
-            InserindoDados(cliente, connection);
+            //InserindoDados(cliente, connection);
 
             InserindoAtribuindoID(cliente, connection);
 
             AtualizandoCliente(cliente, connection);
             
             RemovendoRegistro(cliente, connection);
+
+            connection.Close();
         }
 
         private static void RemovendoRegistro(Cliente cliente, SqlConnection connection)
@@ -42,7 +44,7 @@ namespace PersistenciaSimples
             SqlCommand sqlCommand = connection.CreateCommand();
             sqlCommand.CommandType = System.Data.CommandType.Text;
 
-            sqlCommand.CommandText = "INSERT INTO Clientes (Nome, Sobrenome, Idade, DataNascimento) ";
+            sqlCommand.CommandText =  "INSERT INTO Clientes (Nome, Sobrenome, Idade, DataNascimento) ";
             sqlCommand.CommandText += "OUTPUT inserted.Id ";
             sqlCommand.CommandText += "VALUES (@Nome, @Sobrenome, @Idade, @DataNascimento) ";
 
@@ -78,7 +80,7 @@ namespace PersistenciaSimples
             /// ERRADO nunca implementem desta forma
             sqlCommand.CommandText = "INSERT INTO Clientes (Nome, Sobrenome, Idade, DataNascimento) ";
             sqlCommand.CommandText += @" VALUES ('" + cliente.Nome + "','" + cliente.Sobrenome + "'," +
-                                                     cliente.Idade.ToString() + ",'" + cliente.DataNascimento.ToString("dd/MM/yyyy") + "')";
+                                                      cliente.Idade.ToString() + ",'" + cliente.DataNascimento.ToString("dd/MM/yyyy") + "')";
 
             sqlCommand.ExecuteNonQuery();
 

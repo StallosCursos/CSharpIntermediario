@@ -68,6 +68,7 @@ namespace SerializandoJSON
             File.WriteAllText("chars.json", arquivoSerializado);
 
             string arquivoDisco = File.ReadAllText("chars.json");
+
             var chars = System.Text.Json.JsonSerializer.Deserialize<CharsJson>(arquivoDisco);
 
             ImprimirTabela("Json .net", chars.Characters);
