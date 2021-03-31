@@ -14,7 +14,7 @@ namespace DAO.DataAcessObject
         {
         }
 
-        public EnderecoDao()
+        public EnderecoDao() : base()
         {
         }
 

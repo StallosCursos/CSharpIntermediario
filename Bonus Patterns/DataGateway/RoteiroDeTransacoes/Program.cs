@@ -14,6 +14,8 @@ namespace DAO
             IEnderecoDao enderecoDao = new EnderecoDao();
 
             var cliente = InserindoCliente();
+            
+            ExibindoTodosClientes(clienteDao);
 
             AtualizandoCliente(clienteDao, cliente);
 

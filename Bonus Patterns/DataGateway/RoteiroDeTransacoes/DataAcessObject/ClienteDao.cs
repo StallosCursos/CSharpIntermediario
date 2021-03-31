@@ -14,7 +14,7 @@ namespace DAO.DataAcessObject
         {
         }
 
-        public ClienteDao()
+        public ClienteDao() : base()
         {
         }
 
